@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="icon/fav.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="overlay"></div>
+    <nav>
+        <div class="theame">
+            <div class="greet">
+                <p><span class="uname"></span></p>
+            </div>
+            <div class="color-con">
+                <span>Choose Theme</span>
+                <input type="color" id="color-change" value="" >
+            </div>
+        </div>
+    </nav>
+    
+    <h1>Todo App</h1>
+
+    <div class="wrapper">
+        <form action="">
+            <input type="text" id="todo-input" placeholder="Write anything to add in Todo" autocomplete="off">
+            <button id="add-button">ADD</button>
+        </form>
+    
+    <ul class="todo-list">
+        <!-- <li class="todo">
+            <input type="checkbox" name="" id="todo-1">
+            <label for="todo-1" class="custom-checkbox">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="transparent"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+            </label>
+            <label for="todo-1" class="todo-text">This is new added todo</label>
+            <button class="edit-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="20px" fill="var(--secodary-color)"><path d="M200-200h57l391-391-57-57-391 391v57Zm-80 80v-170l528-527q12-11 26.5-17t30.5-6q16 0 31 6t26 18l55 56q12 11 17.5 26t5.5 30q0 16-5.5 30.5T817-647L290-120H120Zm640-584-56-56 56 56Zm-141 85-28-29 57 57-29-28Z"/></svg>
+            </button>
+            <button class="delete-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="var(--secodary-color)"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg>
+            </button>
+        </li>
+        <li class="todo">
+            <input type="checkbox" name="" id="todo-2">
+            <label for="todo-2" class="custom-checkbox">
+                <svg  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="transparent"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+            </label>
+            <label for="todo-2" class="todo-text">This is new added todo</label>
+            <button class="delete-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="var(--secodary-color)"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg>
+            </button>
+        </li> -->
+    </ul>
+    </div>
+
+    
+    <footer style="position: fixed; bottom: 0; font-size: 14px;">
+        <p style="color: var(--text-color);">Developed By Hasanur Biswas</p>
+    </footer>
+    <div class="user-name-con">
+        <div class="container">
+        
+            <p style="color: var(--text-color); ">Please Enter your Name</p>
+            <input type="text" class="name-inp" autofocus>
+            <button class="name-btn">submit</button>
+
+        </div>
+    </div>
+</body>
+<script src="script.js" defer></script>
+</html>
